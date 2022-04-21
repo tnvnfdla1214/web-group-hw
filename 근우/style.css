@@ -1,10 +1,350 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+button,
+video {
+  box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.common__solid__button {
+  outline: none;
+  border: none;
+  width: 130px;
+  height: 42px;
+  background: #ff5300 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  padding: 14px 35px 13px 35px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 300;
+}
+
+.common__outline__button {
+  border: 1px solid #ff5300;
+  border-radius: 3px;
+  opacity: 1;
+  font-weight: 500;
+  width: 125px;
+  height: 42px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #ff5300;
+  opacity: 1;
+  background-color: #fff;
 }
 
 .grid {
   width: 1170px;
   margin: 0 auto;
 }
+
+/* 여기까지 공통 */
+
+/* 헤더 CSS 시작 */
+
+.kw__header {
+  display: flex;
+  padding-top: 41px;
+}
+
+.kw__header__anchor {
+  text-decoration: none;
+}
+
+.kw__header__nav {
+  display: flex;
+}
+
+.kw__header__nav__menu__list {
+  display: flex;
+  align-items: center;
+  margin-left: 141px;
+  margin-right: auto;
+  height: 36px;
+  gap: 36px;
+  transform: translateY(10.5px);
+}
+
+.kw__header__nav__menu__item {
+  display: flex;
+  height: 25px;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.kw__header__nav__menu__item.selected {
+  color: #ff5300;
+  border-bottom: 1px solid #ff5300;
+  padding-bottom: 10.5px;
+}
+
+.kw__header__button__group {
+  width: 291px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.kw__paypal__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 헤더 CSS 끝  */
+
+/* 푸터 CSS 시작 */
+.kw__new__episode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kw__new__episode__heading {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal 600 32px/60px Josefin Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+
+.kw__new__episode__content {
+  text-align: center;
+  font: normal normal normal 15px/23px Josefin Sans;
+  letter-spacing: 0px;
+  color: #777777;
+  opacity: 1;
+  margin: 30px 0;
+}
+
+.kw__new__episode__form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.kw__new__episode__form__wrapper__input {
+  width: 570px;
+  height: 60px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  border-radius: 4px 0 0 4px;
+  opacity: 1;
+  border: none;
+  outline: none;
+  font: normal normal normal 14px/18px Josefin Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  padding: 23px 30px;
+  box-sizing: border-box;
+  transform: translateX(5px);
+}
+.kw__new__episode__form__wrapper__input::placeholder {
+  color: #c2c2c2;
+}
+
+.common__solid__button.kw__subscribe {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5px;
+  height: 60px;
+  background: #ff5300 0% 0% no-repeat padding-box;
+  border-radius: 0px 3px 3px 0px;
+  opacity: 1;
+  font: normal normal normal 14px;
+  letter-spacing: 0px;
+}
+
+.kw__footer {
+  margin-top: 109px;
+}
+
+.kw__footer__contents {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.kw__footer__item {
+}
+
+.kw__footer__p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font: normal normal normal 14px;
+  color: #999999;
+  height: 43px;
+  opacity: 1;
+  margin-top: 27px;
+  margin-bottom: 45px;
+  line-height: 21px;
+}
+
+.kw__footer__socials {
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 16px/19px Josefin Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.kw__footer__socials__button__group {
+  display: flex;
+  gap: 27px;
+  margin-top: 30px;
+}
+
+.kw__footer__socials__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #ff5300;
+  opacity: 1;
+  background-color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.kw__footer__small__heading {
+  margin-bottom: 32px;
+}
+
+.kw__footer__item__2 {
+  transform: translateY(12px);
+}
+
+.kw__footer__item__unordered__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  font: normal normal normal 14px/28px Josefin Sans;
+  letter-spacing: 0px;
+  color: #999999;
+  opacity: 1;
+}
+
+.kw__nowrap {
+  white-space: nowrap;
+}
+
+.kw__footer__company__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.kw__footer__company__wrapper > * {
+  flex-shrink: 0;
+  height: 43px;
+}
+
+.kw__footer__copyright {
+  text-align: center;
+  font: normal normal normal 14px/28px Josefin Sans;
+  letter-spacing: 0px;
+  color: #999999;
+  opacity: 1;
+  padding: 53px 0;
+}
+
+/* 푸터 CSS 끝 */
