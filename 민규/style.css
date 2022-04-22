@@ -8,3 +8,135 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
+
+/* 메인 텍스트 css 시작 */
+.mg__main__text {
+    display: flex;
+    flex-direction: column;
+}
+.mg__Trending__Episode {
+    margin-bottom: 50px;
+}
+.mg__main__text h3 {
+    letter-spacing: 0px;
+    display: inline-block;
+    color: #FF5300; 
+    text-transform: capitalize;
+    opacity: 0.8;
+    font: normal normal normal 14px/18px Josefin Sans;
+}
+.mg__Trending__Episode h3::before {
+    content: '';
+    width: 25px;
+    height: 1px;
+    float: left;
+    margin-top: 8px;
+    margin-right: 5.5px;
+    background-color: #FF5300; 
+}
+.mg__TE__tit {
+    width: 708px;
+    font: normal normal 600 52px/60px Josefin Sans;
+    color: #222222;
+    margin: 20px 0 25px;
+}
+.mg__TE__sub__text {
+    width: 590px;
+    font: normal normal normal 16px/24px Josefin Sans;
+    color: #555555;
+    margin-bottom: 35px;
+}
+.mg__TE__music {
+    width: 547px;
+}
+.mg__TE__music::-webkit-media-controls-panel {
+    background: transparent;
+}
+.mg__Listen__On__Also h3::after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    float: right;
+    margin-top: 8px;
+    margin-left: 5.5px;
+    background-color: #FF5300; 
+}
+/* 메인 텍스트 스타일 끝 */
+
+/* 인스타그램 스타일 시작 */
+.mg__Insta h2{
+    text-align: center;
+    font: normal normal 600 32px/60px Josefin Sans;
+    color: #222222;
+}
+.mg__Insta__grid {
+    display: grid;
+    width: 1240px;
+    margin: 40px auto 0;
+    grid-template-columns: 310px 310px 310px 310px;
+    grid-template-rows: 214px 214px 214px;
+}
+.mg__Insta__grid a:nth-child(2) {
+    grid-row: span 2;
+}
+.mg__Insta__grid a:nth-child(7) {
+    grid-row: span 2;
+}
+.mg__Insta__grid a {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    position: relative;
+}
+.mg__insta__img__1 {
+    background-image: url(./images/1.png);
+}
+.mg__insta__img__2 {
+    background-image: url(./images/2.png);
+}
+.mg__insta__img__3 {
+    background-image: url(./images/3.png);
+}
+.mg__insta__img__4 {
+    background-image: url(./images/4.png);
+}
+.mg__insta__img__5 {
+    background-image: url(./images/5.png);
+}
+.mg__insta__img__6 {
+    background-image: url(./images/6.png);
+}
+.mg__insta__img__7 {
+    background-image: url(./images/7.png);
+}
+.mg__insta__img__8 {
+    background-image: url(./images/8.png);
+}
+.mg__insta__img__9 {
+    background-image: url(./images/9.png);
+}
+.mg__insta__img__10 {
+    background-image: url(./images/10.png);
+}
+.mg__Insta__grid a:hover::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+}
+.mg__Insta__grid a:hover::after {
+    content: url(./images/link.png);
+    width: 65px;
+    height: 65px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
